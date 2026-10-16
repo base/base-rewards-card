@@ -322,7 +322,6 @@ body {
 }
 /* Trencher shares the existing card layout and shimmer animation. */
 .card.trencher .ticker-strip { background: #ffbe00; }
-.card.trencher .ticker-item { font-size: 26.221px; letter-spacing: 2.6221px; padding: 0 12px; }
 .card.trencher .number-wrapper {
   background-image: linear-gradient(110deg,
     #0000ff 6%, #3c8aff 21%, #0000ff 51%, #3c8aff 76%, #0000ff 98%);
@@ -1069,7 +1068,7 @@ Program</p>
         tagline.textContent = taglines[mode];
       }
       document.querySelectorAll('.ticker-item').forEach(item => {
-        item.textContent = mode === 'trencher' ? 'REWARDS' : 'GRANT';
+        item.textContent = 'GRANT';
       });
       _mascotImg = null;
       for (const name of Object.keys(taglines)) {
